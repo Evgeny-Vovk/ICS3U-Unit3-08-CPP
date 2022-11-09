@@ -21,19 +21,20 @@ int main() {
     std::cout << "\n";
     try {
         yearInt = std::stoi(year);
-        if (yearInt % 4 == 0){
-            if (yearInt % 400 == 0){
+        if (yearInt % 4 == 0) {
+            if (yearInt % 400 == 0) {
                 std::cout << "That is a leap year.";
             } else if (yearInt % 100 == 0) {
                 std::cout << "That is a regular year.";
             } else {
                 std::cout << "That is a leap year.";
             }
-        } else{
+        } else {
             std::cout << "That is a regular.";
         }
     } catch (std::invalid_argument) {
-        std::cout << "Invalid input, please try again following the requirements";
+        std::cout << "Invalid input,"
+                  << " please try again following the requirements";
     }
 
     std::cout << "\n\n\nDone.\n";
